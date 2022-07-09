@@ -15,17 +15,25 @@ function conversorMedidasF(valorF) {
 }
 
 function conversor(quantidadeValor, tipo) {
-    if (tipo === "c" || "C") {
+    let comparar = tipo.toLowerCase();
+    if (comparar === "c") {
         let quantidade = quantidadeValor;
         console.log(conversorMedidasC(quantidade));
     }
-    else {
+    else if (comparar === "f") {
         let quantidade = quantidadeValor;
         console.log(conversorMedidasF(quantidade));
     }
-
+    else if (comparar != "f" || "F" || "c" || "C") {
+        console.log("Erro");
+    }
 }
+
 conversor("40", "c");
 conversor("100", "C");
 conversor("50", "F");
 conversor("500", "f");
+conversor("1000", "F");
+conversor("500", "X");
+conversor("500", "z");
+conversor("500", "C");
