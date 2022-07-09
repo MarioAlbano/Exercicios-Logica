@@ -25,7 +25,7 @@ function conversor(quantidadeValor, tipo) {
         console.log(conversorMedidasF(quantidade));
     }
     else if (comparar != "f" || "F" || "c" || "C") {
-        console.log("Erro");
+        console.log("Não foi possível achar identificar. Por favor, tente 'C' para Celsius ou 'F' para Fahrenheit");
     }
 }
 
@@ -36,4 +36,4 @@ conversor("500", "f");
 conversor("1000", "F");
 conversor("500", "X");
 conversor("500", "z");
-conversor("500", "C");
+conversor("1500", "C");
