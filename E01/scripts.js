@@ -18,11 +18,10 @@ function categorizandoNotas(notaAluno) {
         return "Nota F";
     }
     else {
-        return "Nota Inválida, verifique novamente por favor";
+        return `Nota ${notaAluno} Inválida, verifique novamente por favor`;
     }
 }
 console.log(categorizandoNotas(100));
 console.log(categorizandoNotas(89));
-console.log(categorizandoNotas(72));
 console.log(categorizandoNotas(61));
 console.log(categorizandoNotas(0));
